@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+  <title>Silicon Valley</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="javascript" type="text/javascript" href="script.js">
+
+  <script>
+
+  function turnover(divethrough,expand){
+    document.getElementById('main').style="position: absolute;"
+    expand.style="animation-name:expandButton; animation-duration:0.8s; animation-timing-function:ease; animation-iteration-count:1; position:absolute;"
+    expand.innerHTML="";
+    document.documentElement.scrollTop = 0;
+    setInterval(newPage,500);
+  }
+
+  function newPage(){
+    document.getElementById('main').style="display: none;"
+    document.getElementById('expand').style="background-color:#fff; display:none;"
+    document.getElementById('divethrough').style="display: block; position:relative;"
+  }
+
+
+  function spread(a,b){
+    a.style="margin-left:18%;transition:1s;color:black;"
+    b.style="height: 690px;width: 25%;margin:-690px 18%; 0px 0px;transition:2s;"
+  }
+
+  function spreadRollBack(a,b,c){
+    a.style="margin-left:37.5%;transition:1s;"
+    b.style="height: 640px;width: 22.5%;margin:-750px 38.5%; 0px 0px;transition:1.25s;"
+    c.style="display:block;"
+  }
+
+  function slideOver(a,b){
+      a.style="margin: 150px 0px 100px 2%;transition: 1s;"
+      b.style="margin: 200px 2% 100px 0px;transition:1.5s;"
+
+  }
+
+  </script>
+
+</head>
+
+<body>
+
+   <section id="main" style="display:show;">
+
+      <div class="silliconValley">
+      </div>
+      <p id="cursiveSV">"The Sillicon Valley culture."</p>
+
+      <div id="silliconValleyContent">
+        <p>
+          Region in San Francisco, California that is considered to be the technology
+          hub of the United States. The region is made up a number of computer companies and
+          computer chip manufactures. The region gets its nickname from the silicon that is used
+          in computer chips. Due to the demand for space in Silicon Valley, real estate and
+          other property is very expensive and hard to find.
+        </p><hr style="width:80%; margin-top:20px; margin-bottom:20px;">
+        <p>
+          Silicon Valley is a nickname for the southern portion of the San Francisco Bay Area,
+          which is located in part of the U.S. state of California known as Northern California.
+          It is home to many of the world's largest high-tech corporations, as well as thousands
+          of startup companies. Several companies which have enormous presence around the world
+          have their headquarters in Silicon Valley. Silicon Valley is a term applied as a whole
+          for different regions present in Northern California.
+        </p>
+      </div>
+
+      <div id="orgList">
+        <h6>Shrine for every software developer</h6>
+        <p id="top">The main reason for Silicon Valley's success is its spirit of cooperation. For example, many
+           founders of local companies went to school together. That makes them more likely to promote each
+           other regardless of company affiliation. Personal loyalties override corporate ones. Professional networks led
+           to easy information exchange. Companies found that collaboration between them made them all more successful.<br>The
+           State of California prohibited non-compete clauses. As a result, star performers could leave a company to start
+           their own to test out new ideas. As a result, employees focus on helping each other solve problems. An
+           often-overlooked reason is Silicon Valley's cultural diversity. Between 1995-2005, more than half of its
+           start-ups were founded by immigrants. Why? The Valley attracts top engineers from around the world, especially
+           India and China. Diversity leads to innovation as long as everyone focuses on their shared goals.
+        </p>
+        <img src="images/computerMuseum.jpg">
+        <p id="bottom">
+          The most well-known Silicon Valley companies are Apple, Facebook, Google, and Netflix.
+          The area also launched Tesla, Twitter, Yahoo!, and eBay. There are many business support companies such as
+          Cisco, Oracle, Salesforce.com, Hewlett-Packard, and Intel. Other companies include Adobe, Intuit, and Zynga.
+        </p>
+      </div>
+
+      <p id="dive">Click the button below to see how the Silicon valley was transformed and who did it</p>
+
+    </section>
+
+    <div id="expand" onclick="turnover(divethrough,expand)">Dive in</div>
+
+    
+
+    <section id="divethrough">
+
+      <section id="introNewPage">
+      <h6>What Silicon Valley is all about?</h6>
+      <p style="text-align:justify;margin: 0px 5% 50px 5%;">Silicon Valley is a name that is synonymous with the technology industry, but when and how did this
+         small area of California become the center of the tech world? The area's transformation happened gradually,
+         over a period of more than 100 years. Here's how.<br>
+         Silicon Valley is an almost $3 trillion neighborhood thanks to companies like Apple, Google, and Tesla. But
+         it wasn't always this way. In the late 1800s,San Francisco's port helped make it a hub of the early telegraph and radio industries.
+         In 1909, San José became home to one of the US's first radio stations.<br>
+      </p>
+      <img src="images/IBM.jpg" style="float:left; border-radius:10px; margin-bottom:50px;" >
+
+      <p style="text-align:justify;margin: 0px 100px 50px 50%;">
+         In 1933, the Navy purchased Moffett Field to dock and maintain the USS Macon. This made Moffett Field a major hub for the early days of the aerospace industry.
+         Many scientists and researchers all found work in the area. In 1939, the Ames Research Center was founded in the area,
+         and it became home to the world's largest wind tunnel in 1949.<br>
+         Also in 1939, William Hewlett and Dave Packard founded Hewlett-Packard in Palo Alto, which originally made oscilloscopes.
+         Then, during World War II, HP made radar and artillery technology. At this point, computers were about the size of a room.
+         In the 1940s, William Shockley coinvented the transistor while at Bell Labs. The transistor is now known as the computer
+         processor. <br>
+      </p>
+      <img src="images/geniusMinds.jpg" style="margin:100px 0px 50px 0px;">
+
+      <p style="text-align:justify; margin: -150px 5% 50px 5%; background-color:#fff; color: black; padding: 5%; border-radius:10px; position:relative;">
+         In 1969, the Stanford Research Institute became one of the four nodes of ARPANET. A government research project that would
+         go on to become the internet. In 1970, Xerox opened its PARC lab in Palo Alto. PARC invented early computing tech, including
+         ethernet computing and the graphical user interface.<br><br>
+         In 1971, journalist Don Hoefler titled a 3-part report on the semiconductor industry "SILICON VALLEY USA." The name stuck.<br>
+         In the 1970s, companies like Atari, Apple, and Oracle were all founded in the area In the 1980s, Silicon Valley became the widely
+         accepted center of the computer industry. eBay, Yahoo, PayPal, and Google are just some of the companies founded in the area in
+         the 1990s With Facebook, Twitter, Uber, and Tesla joining them the following decade. The growth of the tech industry in the area
+         continues to this day.
+       </p>
+       <img src="images/appleComputers.jpg" style="border-radius:10px; margin:100px 20% 50px 20%;">
+      </section>
+
+
+      <section class="revolution">
+
+        <h6>The Revolution</h6>
+        <p>Today, Silicon Valley is home to the headquarters of multi-billion dollar IT enterprises. The beginnings were amateurish
+           essays in color, chaos and revolutionary stirrings. Hippies, hobbyists and clever businessmen had set into motion an
+           unbelievable revolution. The pioneers of the home computer wanted nothing less than to change the world and push “Big Brother”
+           off his throne: they wanted computers for everyone.
+        </p>
+
+        <iframe width="70%" height="600px" style="margin:100px 15% 0px 15%;border-radius:5px;" src="https://www.youtube.com/embed/r44RKWyfcFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h6>Tech giants that changed the world</h6>
+
+        <div id="apple" onmouseover="spread(this,google)" onmouseout="spreadRollBack(this,google)">
+          <div id="appleHead">
+            <p>Apple</p>
+          </div>
+            <img src="images/appleLogo.png" style="height:100px; width:80px; margin: 30px 10% 0px 37%;">
+            <p>Founded by the visionary Steve Jobs, Apple is one of several highly successful companies
+              founded in the 1970s that bucked the traditional notions of corporate culture. Jobs often walked around
+              the office barefoot even after Apple became a Fortune 500 company.
+              By the time of the "1984" television advertisement, Apple's informal culture
+              had become a key trait that differentiated it from its competitors.
+              According to a 2011 report in Fortune, this has resulted in a corporate culture
+              more akin to a startup rather than a multinational corporation.
+            </p>
+        </div>
+
+        <div id="google">
+          <div id="googleHead">
+            <p>Google</p>
+          </div>
+            <img src="images/googleLogo.png" style="height:70px; width:200px; margin: 100px 12% 0px 22.5%;">
+            <p>Google Inc., American search engine company, founded in 1998 by Sergey Brin
+              and Larry Page that is a subsidiary of the holding company Alphabet Inc. More
+              than 70 percent of worldwide online search requests are handled by Google, placing it
+              at the heart of most Internet users' experience.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="visionary">
+
+      <div id="steve">
+        <h6>The visionary, Steve Jobs...</h6>
+        <img src="images/steveIntro.jpg">
+        <p>As an innovator and visionary, Steve Jobs' accomplishments can be held on a pedestal with the likes of Microsoft’s Bill Gates,
+           Google’s Larry Page and Sergey Brin and Facebook’s Mark Zuckerberg. The aforementioned names are all highly regarded within
+           technology for transforming consumerism and the accessibility of information. While best known as the CEO of Apple, the late
+           Jobs has had a profound effect on the world outside of technology. From purchasing Pixar in 1986 to supporting charities and
+           environmental causes, Jobs’ achievements and innovations continue to affect industries and lifestyles worldwide. He changed the
+           way we think about and use technology forever, putting his own stamp on everything from the personal computer to the music
+           industry.
+        </p>
+      </div>
+
+      <h5>A touch of genius</h5>
+
+      <div id="mac">
+        <img id="old" src="images/steveMacOld.jpg">
+        <img id="new" src="images/steveMacNew.jpg">
+        <div id="macContent">
+          <h4>Mac : Revolutionizing the computer industry</h4><br>
+          <p id="quote">"We started out to get a computer in the hands of everyday people, and we succeeded beyond our wildest dreams."<br>
+            -Steve Jobs
+          </p>
+          <p>
+            Like many of the revolutions of the computing age, though, the Internet owes a debt of gratitude to Steve Jobs. A NeXT Computer —
+            created by NeXT Inc., Steve Jobs's computer company during his 'wilderness years' — was used not only to host the world's first web
+            server, but to write the first web browser.<br>
+            Steve Jobs' vision of a "computer for the rest of us" sparked the PC revolution and made Apple an icon of American business.
+          </p>
+        </div>
+      </div>
+
+      <div id="ipod">
+        <img id="steveIpod" src="images/ipod.jpg">
+
+        <div id="ipodReveal">
+          <h6>A 1000 songs in your pocket</h6>
+          <img id="png" src="images/ipodVector.png" style="height:500px;width:425px;margin:-200px 0px 100px 20%;float:left;">
+        </div>
+
+        <div id="ipodContent"> <!--onmouseover="slideOver(this,steveIpod,ipodReveal)-->
+          <h4>iPod : Revolutionizing the music industry</h4><br>
+          <p id="quote">“Music is a part of everyone’s life, and because it’s a part of everyone’s life, it’s a very large target
+            market all around the world. It knows no boundaries.”<br>
+            -Steve Jobs
+          </p>
+          <p>
+            Like many of the revolutions of the computing age, though, the Internet owes a debt of gratitude to Steve Jobs. A NeXT Computer —
+            created by NeXT Inc., Steve Jobs's computer company during his 'wilderness years' — was used not only to host the world's first web
+            server, but to write the first web browser.<br>
+            Steve Jobs' vision of a "computer for the rest of us" sparked the PC revolution and made Apple an icon of American business.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+  </section>
+
+  <footer>
+  </footer>
+
+
+
+ </body>
+</html>

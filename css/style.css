@@ -1,0 +1,875 @@
+body{
+  margin : 0px;
+  padding : 0px;
+}
+
+/*-------Font-faces-------*/
+
+    /*Graphik Bold*/
+    @font-face {font-family: GraphikBold;src : url('../fontFaces/GraphikBold.otf');}
+    /*Graphik Black*/
+    @font-face {font-family: GraphikBlack;src : url('../fontFaces/GraphikBlack.otf');}
+    /*Segoe UI Light*/
+    @font-face {font-family: SegoeUILight;src : url('../fontFaces/SegoeUIL.ttf');}
+    /*Affectionately Yours*/
+    @font-face {font-family: AffectionatelyYours;src : url('../fontFaces/AffectionatelyYours.ttf');}
+    /*Myraid Pro Light*/
+    @font-face {font-family: MyraidProLight;src : url('../fontFaces/MyriadProLight.otf');}
+
+/*-------Animations-------*/
+
+    @keyframes movingGradient {
+    	0% {
+    		background-position: 0% 50%
+    	}
+    	50% {
+    		background-position: 100% 50%
+    	}
+    	100% {
+    		background-position: 0% 50%
+    	}
+    }
+
+
+    @keyframes slideshow {
+      0% {
+    		background-image:  url('..images/cableKart1.jpg');
+    	}
+    	50% {
+    		background-image:  url('..images/cableKart1.jpg');
+    	}
+    	100% {
+    		background-image:  url('..images/cableKart.jpg');
+    	}
+    }
+
+
+    @keyframes expandButton {
+      0%{
+        float: none;
+        margin: 1200px 35% 0px 35%;
+        width: 30%;
+        height: 200px;
+      }
+      25%{
+        float: none;
+        margin: 100px 25% 0px 25%;
+        width: 50%;
+        background-color: #161616;
+        height: 600px;
+      }
+      50%{
+        float: none;
+        margin: 50px 15% 0px 15%;
+        width: 70%;
+        border-radius: 5px;
+        background-color: #0B0B0B;
+        height: 1000px;
+      }
+      100%{
+        float: none;
+        margin: 0px 0% 0% 0%;
+        width: 100%;
+        border-radius: 0px;
+        background-color: black;
+        height: 1500px;
+        top: 0px;
+      }
+    }
+
+
+
+
+/*--------Main page---------*/
+
+header{
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+header h1{
+  padding-top: 12.5px;
+  font-family: GraphikBold;
+  font-size: 25px;
+  text-align: left;
+  margin: 0px;
+  padding-left: 20px;
+  color: #fff;
+}
+
+#navigate div{
+  height:27px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  width: 170px;
+  display: inline-block;
+  float: right;
+  box-shadow: 5px 4px 32px -7px #454345;
+  margin: -20px 10px 0px 10px;
+
+}
+
+#navigate p,a{
+  text-decoration: none;
+  font-family: GraphikBold;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+.keys{
+  width: 20%;
+  height: 70px;
+  margin-left: 65%;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-color: grey;
+  padding: 10px;
+  margin-right: 50px;
+  list-style-type: none;
+}
+
+
+#keyShortcut{
+  height: 45px;
+  width: 85px;
+  background-color: black;
+  float:right;
+  margin-left: 50px;
+  display: inline-block;
+  padding-top: 25px;
+  border-radius: 5px;
+  font-family: SegoeUILight;
+  font-size: 17.5px;
+  color: #fff;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.cityDetail{
+  margin-bottom: 100px;
+}
+
+#intro{
+  width: 100%;
+  height: 400px;
+  background: url('../images/intro.jpeg');
+  background-size: cover;
+}
+
+#intro > h1{
+  font-family: GraphikBold;
+  margin: 0px;
+  padding: 70px 0px 0px 150px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.indexContent{
+  width: 17.5%;
+  height: 66px;
+  padding: 5px;
+  margin: -180px 10px 180px 20px;
+  background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.indexContent h1{
+  font-family: GraphikBold;
+  font-size: 26px;
+  text-align: center;
+}
+
+.indexContent:hover {
+  height: 220px;
+  background-color: #fff;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 26px;
+  margin-left: 20px;
+  box-shadow: 5px 4px 32px -7px #454345;
+}
+
+#indexContentList {
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#indexContentList li {
+  font-family: SegoeUILight;
+  font-size: 22px;
+  margin-left: -10px;
+  list-style: none;
+}
+
+.indexContent:hover #indexContentList{
+  display: block;
+}
+
+#indexContentList li:hover  {
+  width: 275px;
+  box-shadow: 5px 4px 32px -7px #454345;
+  border-radius: 7.5px;
+  margin-left: -52px;
+  background-color: black;
+}
+
+
+#cityIntro{
+  width: 50%;
+  align-items: center;
+  margin: 100px 0px 0px 25%;
+}
+
+#cityIntro article{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  font-variant: normal;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+}
+
+#SF{
+  font-size: 28px;
+  font-family: Bradley Hand;
+  font-variant: normal;
+  font-style: italic;
+  line-height: 0px;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+#cableKart img{
+  background-size: cover;
+  width: 60%;
+  float: left;
+  border-radius: 0px 10px 10px 0px;
+  height: 550px;
+  margin-top:100px;
+}
+
+
+#cableKart:hover{
+  animation-name: slideshow();
+  animation-duration: 8s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+
+#cableKartPara{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  font-variant: normal;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: 61%;
+  margin-right: 5%;
+  padding-top: 200px;
+
+}
+
+
+#people img{
+  background-size: cover;
+  width: 70%;
+  float: right;
+  border-radius: 10px 0px 0px 10px;
+  height: 700px;
+  margin-top:150px;
+}
+
+
+#peoplePara{
+  font-size: 21px;
+  border-radius: 0px 10px 10px 0px;
+  font-family: SegoeUILight;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #fff;
+  box-shadow: -8px 2px 24px -4px rgba(0,0,0,0.75);
+  font-variant: normal;
+  font-style: normal;
+  position: relative;
+  text-decoration: none;
+  float: left;
+  width: 35%;
+  height: 10%;
+  line-height: 30px;
+  margin-top: -250px;
+  margin-bottom: 180px;
+  padding: 2%;
+}
+
+
+#sneak {
+  margin-top: 180px;
+  font-family: American Typewriter;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+
+
+#fineArts {
+  background-image: url("../images/museumFineArts.jpg");
+  background-size: cover;
+  width: 30%;
+  border-radius: 10px;
+  display: inline;
+  height: 700px;
+  position: relative;
+  float: left;
+  margin: 100px 0px 0px 25%;
+  box-shadow: -8px 2px 24px -4px rgba(0,0,0,0.75);
+}
+
+
+
+#fineArts p{
+  margin-left: 5%;
+  color: #F0B27A;
+  font-family: AffectionatelyYours;
+  font-size: 35px;
+}
+
+#fineArtsPara{
+  font-size: 21px;
+  border-radius: 10px;
+  font-family: SegoeUILight;
+  font-variant: normal;
+  font-style: normal;
+  text-decoration: none;
+  float: right;
+  display: inline;
+  margin: -575px 8% 0px 62%;
+  width: 40%;
+  line-height: 30px;
+  padding: 40px 20px 30px 40px;
+  box-shadow: -8px 2px 24px -4px rgba(0,0,0,0.75);
+}
+
+
+
+#paintedLadies {
+  background-image: url("../images/paintedLadies.jpg");
+  background-size: cover;
+  width: 30%;
+  border-radius: 10px;
+  display: inline;
+  height: 700px;
+  position: relative;
+  float: right;
+  margin: 100px 25% 0px 0px;
+  box-shadow: 6px 2px 24px -5px rgba(0,0,0,0.75);
+}
+
+
+
+#paintedLadies p{
+  margin-left: 5%;
+  color: #5D6D7E;
+  font-family: AffectionatelyYours;
+  font-size: 35px;
+}
+
+#paintedLadiesPara{
+  font-size: 21px;
+  border-radius: 10px;
+  font-family: SegoeUILight;
+  font-variant: normal;
+  font-style: normal;
+  text-decoration: none;
+  float: left;
+  display: inline;
+  margin: -575px 62% 0px 8%;
+  width: 40%;
+  line-height: 30px;
+  padding: 40px 20px 30px 40px;
+  box-shadow: 6px 2px 24px -5px rgba(0,0,0,0.75);
+}
+
+
+/*----------Golden Gate-----------*/
+
+.goldenGate{
+  width: 100%;
+  height: 900px;
+  background: url('../images/goldenGateTop.jpg');
+  background-size: cover;
+  margin-top: -70px;
+  align: center;
+}
+
+#cursiveGG{
+  font-size: 40px;
+  font-family: AffectionatelyYours;
+  text-align: center;
+  color: black;
+  margin-top: -600px;
+}
+
+#goldenGateContent{
+  height: 200px;
+  width: 100%;
+  margin-top: 650px;
+}
+
+#gGCard{
+  font-size: 22px;
+  font-family: SegoeUILight;
+  margin: 0px 20% 0px 20%;
+  text-align: center;
+}
+
+#gGTop{
+  height: 650px;
+  width: 100%;
+  background: url('../images/goldenGate.jpg');
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+#gGTop p{
+  background-color: #fff;
+  width: 70%;
+  font-size: 22px;
+  font-family: SegoeUILight;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  margin: 600px 0px 0px 13.5%;
+  box-shadow: 5px 4px 32px -7px #454345;
+}
+
+#gGTop p:hover{
+  box-shadow: 4px 5px 23px -8px #454345;
+  font-size: 21.7px;
+  width: 69.9%;
+  transition: 150s box-shadow;
+}
+
+#gG {
+  font-size: 40px;
+  font-family: GraphikBold;
+  margin-left: 43%;
+}
+
+.gGPeople p{
+  background-color: #fff;
+  width: 45%;
+  font-size: 22px;
+  font-family: SegoeUILight;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  margin: -750px 0px 0px 50%;
+  box-shadow: 5px 4px 32px -7px #454345;
+}
+
+
+/*--------------Lombard Street----------------*/
+
+.lombardStreet{
+  width: 100%;
+  height: 900px;
+  background: url('../images/lombardStreetAerial.jpg');
+  background-size: cover;
+  margin-top: -70px;
+  align: center;
+}
+
+#cursiveLS{
+  font-size: 40px;
+  font-family: AffectionatelyYours;
+  text-align: center;
+  color: black;
+  margin-top: -600px;
+  background-color: #fff;
+  width: 30%;
+  padding: 10px;
+  margin: -600px 0px 0px 35%;
+  color: black;
+  border-radius: 10px;
+}
+
+#lombardStreetContent{
+  height: 200px;
+  width: 100%;
+  margin-top: 650px;
+}
+
+#lombardStreetContent p{
+  font-size: 22px;
+  font-family: SegoeUILight;
+  margin: 0px 5% 0px 5%;
+  text-align: center;
+}
+
+/*--------------Sillicon Valley----------------*/
+
+.silliconValley{
+  width: 100%;
+  height: 900px;
+  background: url('../images/silliconValley.jpg');
+  background-size: cover;
+  margin-top: -70px;
+  align: center;
+}
+
+#cursiveSV{
+  font-size: 40px;
+  font-family: AffectionatelyYours;
+  text-align: center;
+  color: black;
+  margin-top: -600px;
+  background-color: #fff;
+  width: 30%;
+  padding: 10px;
+  margin: -600px 0px 0px 35%;
+  color: black;
+  border-radius: 10px;
+}
+
+#silliconValleyContent{
+  height: 200px;
+  width: 100%;
+  margin-top: 650px;
+}
+
+#silliconValleyContent p{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  margin: 0px 5% 0px 5%;
+  text-align: center;
+}
+
+#orgList h6{
+  font-size: 40px;
+  font-family: GraphikBold;
+  margin: 150px 25% 50px 25%;
+}
+
+#orgList > #top{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  margin: 0px 5% 0px 5%;
+  text-align: left;
+}
+
+#orgList img{
+  height: 450px;
+  width: 50%;
+  float: left;
+  border-radius: 5px;
+  display: block;
+  margin: 70px 0px 70px 25%;
+  box-shadow: 0.5px 3px 15px rgba(0,0,0,0.2);
+
+}
+
+#orgList > #bottom{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  margin: 0px 5% 70px 5%;
+  text-align: center;
+  float: right;
+}
+
+#dive{
+  font-size: 21px;
+  font-family: MyraidProLight;
+  margin: 0px 25% 0px 0px;
+  float: right;
+  border-radius: 5px;
+  height: 100px;
+  color: #BBBDBF;
+  background-image: linear-gradient(to left, #444a50, #3b3f44, #313538, #292b2d, #202122);
+  padding: 10px;
+}
+
+#expand{
+  width: 10%;
+  height: 40px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 21px;
+  font-family: GraphikBlack;
+  color: #fff;
+  background-image: linear-gradient(to left, #060606, #323234, #5e5d63, #8d8d96, #c0c0cc);
+  background-size: 400% 400%;
+  animation-name: movingGradient;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+  float: right;
+  position: relative;
+  margin-right: -30%;
+  padding-top: 10px;
+  top: 60px;
+  text-align: center;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+
+#divethrough{
+  display: none;
+}
+
+#introNewPage{
+    background-color: black;
+}
+
+#introNewPage h6{
+  font-size: 40px;
+  font-family: GraphikBlack;
+  margin-top: 0px;
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+}
+
+#introNewPage p{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  color: #fff;
+}
+
+.revolution h6{
+  font-size: 40px;
+  font-family: GraphikBold;
+  margin-top: 50px;
+  padding-top: 50px;
+  color: black;
+  text-align: center;
+}
+
+.revolution p{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  margin: 0px 10% 0px 10%;
+  color: black;
+}
+
+
+#apple {
+  height: 690px;
+  width: 25%;
+  border-radius: 10px;
+  margin-top: 100px;
+  position: relative;
+  display: inline-block;
+  background-color: black;
+  box-shadow: 4px 5px 23px -8px #454345;
+  margin-left: 37.5%;
+}
+
+#appleHead{
+  background-color: #fff;
+  height: 70px;
+  margin-top: -30px;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+#appleHead p{
+  font-size: 30px;
+  font-family: GraphikBold;
+  margin-left:35%;
+  padding-top: 20px;
+}
+
+#apple img + p{
+  font-size: 21px;
+  text-align: center;
+  color: #fff;
+  line-height: 22px;
+  margin: 30px 20px 20px 20px;
+  font-family: SegoeUILight;
+}
+
+
+#google {
+  height: 640px;
+  width: 22.5%;
+  border-radius: 10px;
+  margin-top: -750px;
+  float: right;
+  display: inline-block;
+  box-shadow: 4px 5px 23px -8px #454345;
+  background-color: black;
+  margin-right: 38.5%;
+}
+
+#googleHead{
+  background-color: #fff;
+  height: 70px;
+  margin-top: -30px;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+#googleHead p{
+  font-size: 30px;
+  font-family: GraphikBold;
+  margin-left:32.5%;
+  padding-top: 20px;
+}
+
+#google img + p{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 70px 20px 20px 20px;
+  font-family: SegoeUILight;
+}
+
+#steve h6{
+  font-size: 42px;
+  font-family: AffectionatelyYours;
+  margin-top: 100px;
+  color: black;
+  text-align: center;
+}
+
+#steve p{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  margin: 50px 10% 0px 10%;
+  color: black;
+}
+
+.visionary h5{
+  font-size: 42px;
+  font-family: GraphikBold;
+  margin-top: 100px;
+  padding-top: 50px;
+  color: black;
+  text-align: center;
+}
+
+#quote p{
+  font-family: AffectionatelyYours;
+  font-size: 21px;
+}
+
+#mac{
+  margin-bottom: 200px;
+  width: 100%;
+}
+
+#macContent{
+  border-radius: 10px;
+  float: right;
+  margin: 50px 3% 0px 0px;
+  width: 39%;
+}
+
+
+#macContent h4{
+  font-size: 30px;
+  text-align: center;
+  font-family: GraphikBold;
+}
+
+#macContent p{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  margin: 5%;
+  color: black;
+  background-color: #fff;
+}
+
+#mac #old{
+  height: 475px;
+  width: 45%;
+  float: left;
+  border-radius: 10px;
+}
+
+#old img:hover{
+  position: relative;
+}
+
+#mac #new{
+  height: 600px;
+  width: 30%;
+  float: left;
+  position: relative;
+  margin: 10% 30px 0px -20%;
+  border-radius: 10px;
+}
+
+
+#ipod{
+  margin-top: 100px;
+  width: 100%;
+}
+
+
+#ipodContent{
+  border-radius: 10px;
+  float: left;
+  background-color: #fff;
+  position: relative;
+  display: inline;
+  box-shadow: 4px 5px 23px -8px #454345;
+  margin: -700px 0px 0px 20%;
+  width: 39%;
+}
+
+
+#ipodContent h4{
+  font-size: 30px;
+  text-align: center;
+  font-family: GraphikBold;
+}
+
+#ipodContent p{
+  font-size: 21px;
+  font-family: SegoeUILight;
+  margin: 5%;
+  color: black;
+}
+
+#ipodReveal{
+  display: none;
+}
+
+#steveIpod {
+  height: 620px;
+  width: 30%;
+  float: right;
+  display: inline;
+  margin: 200px 15% 100px 0px;
+  border-radius: 10px;
+}
+
+#ipod h6{
+  color: black;
+  background-color: #fff;
+  font-size: 21px;
+  font-family: SegoeUILight;
+  border-radius: 10px;
+  float: right;
+  width: 20%;
+  margin: 220px 3% 100px 0px;
+}
+
+footer{
+  height: 50px;
+  margin-top: 2000px;
+  width: 100%;
+  background-color: black;
+}

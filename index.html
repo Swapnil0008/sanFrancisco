@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+  <title>MiniProject - 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="javascript" type="text/javascript" href="script.js">
+
+  <script>
+
+
+    /*function collapse(a){
+      a.style="height:350px;"
+      var dat=a.getAttribute('data').value;
+      alert(dat);
+    }*/
+
+    function slideOver(a,b){
+        a.style="margin-left: 15%;transition: 1s;"
+        b.style="background-image: linear-gradient(to right top, #d07405, #b0681e, #915c2a, #725033, #524439);color: #fff;margin:-575px 15% 0px 63%;position:relative;transition:1.5s;"
+    }
+
+    function slideBack(a,b){
+        a.style="margin-left: 25%;transition: 1s;"
+        b.style="background-image: #fff;color: black;margin:-575px 8% 0px 62%;transition:1.5s;"
+
+    }
+
+    function slideOverAlt(a,b){
+        a.style="margin-right: 15%;transition: 1s;"
+        b.style="background-image: linear-gradient(to right top, #2e4053, #4c5b6d, #6c7887, #8c97a3, #aeb6bf);color: #fff;margin:-575px 63% 0px 15%;position:relative;transition:1.5s;"
+    }
+
+    function slideBackAlt(a,b){
+        a.style="margin-right: 25%;transition: 1s;"
+        b.style="background-image: #fff;color: black;margin:-575px 62% 0px 8%;transition:1.5s;"
+
+    }
+
+
+  </script>
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Travel</h1>
+  </header>
+
+  <section id="navigate">
+    <div id="gG" onmouseover="collapse(this)" onmouseout="rollBack(this)"><a href="goldenGate.html" accesskey="g" style="color:#E04321;"><p>Golden Gate</p></a></div>
+    <div id="lS" onmouseover="collapse(this)" onmouseout="rollBack(this)"><a href="lombardStreet.html" accesskey="l" style="color:#77CA4B;"><p>Lombard Street</p></a></div>
+    <div id="sV" onmouseover="collapse(this)" onmouseout="rollBack(this)"><a href="siliconValley.html" accesskey="s" style="color:#4B9CCA;"><p>Sillicon Valley</p></a></div>
+  </section>
+
+  <!--section class="keys">
+    <div id="keyShortcut">Ctrl+Alt+G</div>
+    <div id="keyShortcut">Ctrl+Alt+L</div>
+    <div id="keyShortcut">Ctrl+Alt+S</div>
+  </section-->
+
+  <section>
+
+    <div id="intro">
+      <h1>San Francisco</h1>
+    </div>
+
+
+    <section id="cityIntro">
+      <article><span id="SF">San Francisco,</span> the city of the uncommon, the unforeseen and the
+        unexpected. People taking selfies at the Golden Gate
+        bridge, skaters running hard in front of the Ferry
+        building. Business meetings happenning at every corner.
+        Here you'll find people from almost every corner of the Earth.
+        San Francisco is home to a little bit of everything.
+        Whether you’re a first time visitor or a long-time local,
+        San Francisco's Golden Gates welcome all.
+        This is the place to find out about all things San
+        Francisco.
+      </article>
+    </section>
+
+    <section class="cityDetail">
+
+      <section id="cableKart" >
+        <img src="images/cableKart.jpg">
+      </section>
+      <p id="cableKartPara">San Francisco holds a secure place in the United States’ romantic dream of itself—a cool, elegant,
+        handsome, worldly seaport whose steep streets offer breathtaking views of one of the world’s greatest bays.
+         According to the dream, San Franciscans are sophisticates whose lives hold full measures of such civilized
+         pleasures as music, art, and good food.
+      </p>
+
+      <section id="people">
+        <img src="images/sanFranPeople.jpg">
+      </section>
+        <p id="peoplePara">
+          Rudyard Kipling once said that the only drawback to San Francisco is how hard it is to leave.
+          Many San Franciscans would agree with Kipling: Bay Area natives and transplants alike tend to be
+          fiercely loyal to their city, and most SFers would tell you that they could never imagine living
+          anywhere else. With sweeping vistas on every hill, beautiful beaches, year-round free concerts
+          and cultural activities -- not to mention some of the best food, music and art in the country --
+          it's easy to see why so many have been lured by the siren song of the San Francisco Bay.
+        </p>
+
+
+      <section id="sneak">
+        <p>
+            <hr style="width:80%; margin-top:20px; margin-bottom:20px;">
+            Walkthrough
+            <hr style="width:80%; margin-top:20px; margin-bottom:20px;">
+        </p>
+      </section>
+
+
+      <section id="fineArts" onmouseover="slideOver(this,fineArtsPara)" onmouseout="slideBack(this,fineArtsPara)">
+        <p>Palace of Fine Arts</p>
+      </section>
+        <p id="fineArtsPara">
+            The Palace of Fine Arts in the Marina District of San Francisco, California, is a
+            monumental structure originally constructed for the 1915 Panama-Pacific Exposition
+            in order to exhibit works of art presented there. One of only a few surviving structures
+            from the Exposition, it is still situated on its original site. It was rebuilt in 1965,
+            and renovation of the lagoon, walkways, and a seismic retrofit were completed in early 2009.<br>
+            In addition to hosting art exhibitions, it remains a popular attraction for
+            tourists and locals and is a favorite location for weddings and wedding party photographs
+            for couples throughout the San Francisco Bay Area and such an icon that a miniature replica
+            of it was built in Disney's California Adventure in Anaheim.
+        </p>
+
+
+      <section id="paintedLadies" onmouseover="slideOverAlt(this,paintedLadiesPara)" onmouseout="slideBackAlt(this,paintedLadiesPara)">
+        <p>Painted Ladies</p>
+      </section>
+        <p id="paintedLadiesPara">
+              One of the most photographed locations in San Francisco, Alamo Square's famous
+              "postcard row" at Hayes and Steiner Streets is indeed a visual treat. A tight,
+              escalating formation of Victorian houses is back-dropped by downtown skyscrapers,
+              providing a stunning contrast. The grassy square itself is an ideal midday break.
+              One of 11 historic districts designated by the Department of City Planning, the area
+              includes several bed and breakfast inns. The Painted Ladies are the best looking ladies in
+              San Francisco, especially against that jaw-dropping backdrop. Learn how to get there, the
+              surrounding neighborhoods and fun facts.
+        </p>
+
+   </section>
+   <footer>
+   </footer>
+ </body>
+</html>
